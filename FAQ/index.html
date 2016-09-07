@@ -1,0 +1,129 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+
+  <title>FAQ || HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/public/css/style.css" >
+  <link rel="stylesheet" href="/public/css/docs.css" >
+
+</head>
+<body>
+  <div id="container" class="wikiconvertor"> 
+    <b class="border-a"></b>
+    <b class="border-b"></b>
+    <b class="border-c"></b>
+    <b class="border-d"></b>
+
+    <div id="header">
+         <h1>OMDoc wiki</h1> 
+    </div>
+
+    <div id="body">
+      <div class="wikiconvertor-pages">
+        <ul>
+            <li><a href="abstractDoc_module&#x2F;">abstractDoc_module</a></li>
+            <li><a href="CDs&#x2F;">CDs</a></li>
+            <li><a href="CodeML&#x2F;">CodeML</a></li>
+            <li><a href="Community&#x2F;">Community</a></li>
+            <li><a href="cross-ref_revisited&#x2F;">cross ref_revisited</a></li>
+            <li><a href="Distribution&#x2F;">Distribution</a></li>
+            <li><a href="DocumentOntology&#x2F;">DocumentOntology</a></li>
+            <li><a href="examples&#x2F;">examples</a></li>
+            <li><a href="extensions&#x2F;">extensions</a></li>
+            <li><a href="FAQ&#x2F;">FAQ</a></li>
+            <li><a href="history&#x2F;">history</a></li>
+            <li><a href="&#x2F;">Home</a></li>
+            <li><a href="MailingLists&#x2F;">MailingLists</a></li>
+            <li><a href="Modules&#x2F;">Modules</a></li>
+            <li><a href="OMDoc1.3&#x2F;">OMDoc1.3</a></li>
+            <li><a href="OMDoc1.6&#x2F;">OMDoc1.6</a></li>
+            <li><a href="OMDoc2.0&#x2F;">OMDoc2.0</a></li>
+            <li><a href="OMDocFormat&#x2F;">OMDocFormat</a></li>
+            <li><a href="omdocPortal&#x2F;">omdocPortal</a></li>
+            <li><a href="OMDocToolsProjects&#x2F;">OMDocToolsProjects</a></li>
+            <li><a href="OpenMath&#x2F;">OpenMath</a></li>
+            <li><a href="PageTemplates&#x2F;">PageTemplates</a></li>
+            <li><a href="PhysML&#x2F;">PhysML</a></li>
+            <li><a href="PresArchitecture&#x2F;">PresArchitecture</a></li>
+            <li><a href="RecentChanges&#x2F;">RecentChanges</a></li>
+            <li><a href="Repository&#x2F;">Repository</a></li>
+            <li><a href="specifications&#x2F;">specifications</a></li>
+            <li><a href="Validation&#x2F;">Validation</a></li>
+            <li><a href="XSLT&#x2F;">XSLT</a></li>
+        </ul>
+      </div>
+
+      <div class="wikiconvertor-content wikistyle relative">
+        <p>This FAQ is never complete, please help us by sending suggestions to <code><span class="pln">users@omdoc</span><span class="pun">.</span><span class="pln">org</span></code>
+or directly edit this page.</p>
+<h1 id="what-is-the-current-stable-version-of-omdoc">What is the current stable version of OMDoc</h1>
+<p>It is version 1.2, it is described on these web pages and in the <a href="http://omdoc.org/pubs/omdoc1.2.pdf">OMDoc specification</a>.</p>
+<h1 id="what-is-the-road-map-for-further-development-in-omdoc-">What is the road-map for further development in OMDoc?</h1>
+<p>The development of OMDoc 2.0 has already begun, this will be a general
+(backwards-incompatible) overhaul of the document format, that will take all the
+experiences with OMDoc 1 into account and track all the developments of web standards
+since OMDoc 1.2. The development proceeds in steps; see the [wiki:DevelopmentPlan Development Plan] for an overview and <a href="https://trac.omdoc.org/OMDoc/roadmap">roadmap</a> for a progress report in terms of TRAC tickets. </p>
+<h1 id="is-nt-omdoc-much-too-verbose-">Is&#39;nt OMDoc much too verbose?</h1>
+<p>the OMDoc format is mainly intended for machine consumption. You do not want to look/edit
+it in this form. For viewing, transform it into html or LaTeX (see the [ToolsSystems
+tools] section, for editing use an OMDoc or xml editor.</p>
+<h1 id="does-nt-communication-between-mathematical-services-in-omdoc-waste-bandwidth-">Does&#39;nt communication between mathematical services in OMDoc waste bandwidth?</h1>
+<p>If you are concerned about disk space and bandwidth, consider using xml-specific
+compression tools like <a href="http://sf.net/projects/xmill">xmill</a> or
+<a href="http://sourceforge.net/projects/xmlppm">xmlppm</a>. They take document structure into account
+during compression and very often realize compressed files that are <b>smaller</b> than
+the non-xml/OMDoc format of the data.</p>
+<h1 id="how-do-i-edit-an-omdoc-document-">How do I edit an OMDoc document?</h1>
+<p>You have the choice of either</p>
+<ul>
+<li>use the semantic wiki <a href="http://kwarc.info/project/swim/">SWiM</a>, which can import and export OMDoc files, and access files in Subversion repositories</li>
+<li>using a general-purpose editor to edit the straight OMDoc representation in
+ASCII. Emacs supports this with <code><span class="pln">nxml</span><span class="pun">-</span><span class="pln">mode</span></code> is a general  XML mode that supports RelaxNG schemata. There is also a dedicated OMDoc mode that needs some love and affection.</li>
+<li>a specialized XML development environment like  <a href="http://www.xmlspy.com">XML Spy</a></li>
+<li>One of the main problems while editing OMDoc is to edit the OpenMath Formulae, there are a couple of solutions for this from the <a href="http://www.openmath.org">OpenMath home page</a>.</li>
+</ul>
+<h1 id="how-can-i-transform-legacy-documents-into-omdoc-">How can I transform legacy documents into OMDoc?</h1>
+<p>There are some rudimentary [wiki:ToolsSystems tools]. For
+help on this matter contact the [wiki:MailingLists OMDoc mailing lists]</p>
+<h1 id="is-there-a-mailing-list-for-omdoc-">Is there a mailing list for OMDoc?</h1>
+<p>Yes, we do; see details [wiki:MailingLists here]    </p>
+<h1 id="how-can-i-become-involved-in-omdoc-development-">How can I become involved in OMDoc development?</h1>
+<p>There are multiple possibilities, you can</p>
+<ul>
+<li>extend the set of <a href="tools.html">OMDoc tools</a>, or</li>
+<li>join one of the [wiki:MailingLists Mailing lists], or</li>
+<li><a href="https://trac.omdoc.org/OMDoc/newticket">file issues</a> in TRAC and join the discussions there, o</li>
+<li>adopt one of the [wiki:Modules OMDoc Modules]
+For anything else, just contact the [wiki:MailingLists developer&#39;s mailing list]</li>
+</ul>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="/public/js/jquery.min.js"><\/script>')</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+  <script>window.JSON || document.write("<script src='/public/js/json2.js'>\x3C/script>")</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write("<script src='/public/js/underscore.min.js'>\x3C/script>")</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>
+  <script>window.Backbone || document.write("<script src='/public/js/backbone.min.js'>\x3C/script>")</script>
+
+  <script src="/public/js/script.js"></script>
+
+</body>
+</html>

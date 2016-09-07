@@ -1,0 +1,124 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+
+  <title>history || HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/public/css/style.css" >
+  <link rel="stylesheet" href="/public/css/docs.css" >
+
+</head>
+<body>
+  <div id="container" class="wikiconvertor"> 
+    <b class="border-a"></b>
+    <b class="border-b"></b>
+    <b class="border-c"></b>
+    <b class="border-d"></b>
+
+    <div id="header">
+         <h1>OMDoc wiki</h1> 
+    </div>
+
+    <div id="body">
+      <div class="wikiconvertor-pages">
+        <ul>
+            <li><a href="abstractDoc_module&#x2F;">abstractDoc_module</a></li>
+            <li><a href="CDs&#x2F;">CDs</a></li>
+            <li><a href="CodeML&#x2F;">CodeML</a></li>
+            <li><a href="Community&#x2F;">Community</a></li>
+            <li><a href="cross-ref_revisited&#x2F;">cross ref_revisited</a></li>
+            <li><a href="Distribution&#x2F;">Distribution</a></li>
+            <li><a href="DocumentOntology&#x2F;">DocumentOntology</a></li>
+            <li><a href="examples&#x2F;">examples</a></li>
+            <li><a href="extensions&#x2F;">extensions</a></li>
+            <li><a href="FAQ&#x2F;">FAQ</a></li>
+            <li><a href="history&#x2F;">history</a></li>
+            <li><a href="&#x2F;">Home</a></li>
+            <li><a href="MailingLists&#x2F;">MailingLists</a></li>
+            <li><a href="Modules&#x2F;">Modules</a></li>
+            <li><a href="OMDoc1.3&#x2F;">OMDoc1.3</a></li>
+            <li><a href="OMDoc1.6&#x2F;">OMDoc1.6</a></li>
+            <li><a href="OMDoc2.0&#x2F;">OMDoc2.0</a></li>
+            <li><a href="OMDocFormat&#x2F;">OMDocFormat</a></li>
+            <li><a href="omdocPortal&#x2F;">omdocPortal</a></li>
+            <li><a href="OMDocToolsProjects&#x2F;">OMDocToolsProjects</a></li>
+            <li><a href="OpenMath&#x2F;">OpenMath</a></li>
+            <li><a href="PageTemplates&#x2F;">PageTemplates</a></li>
+            <li><a href="PhysML&#x2F;">PhysML</a></li>
+            <li><a href="PresArchitecture&#x2F;">PresArchitecture</a></li>
+            <li><a href="RecentChanges&#x2F;">RecentChanges</a></li>
+            <li><a href="Repository&#x2F;">Repository</a></li>
+            <li><a href="specifications&#x2F;">specifications</a></li>
+            <li><a href="Validation&#x2F;">Validation</a></li>
+            <li><a href="XSLT&#x2F;">XSLT</a></li>
+        </ul>
+      </div>
+
+      <div class="wikiconvertor-content wikistyle relative">
+        <p>The start of the development of OMDoc as a content-based representation format for
+mathematical knowledge was triggered by an e-mail by <a href="http://homepages.inf.ed.ac.uk/bundy/">Alan Bundy</a>
+to <a href="http://kwarc.info/kohlhase">Michael Kohlhase</a> in 1998,
+where he lamented the fact that one of the great hindrances of knowledge-based reasoning
+is the fact that formalizing mathematical knowledge is very time-consuming and that it is
+very hard for young researchers to gain recognition for formalization work. This led to
+the idea of developing a global repository of formalized mathematics, which would
+eventually allow peer-reviewed publication of formalized mathematical knowledge, thus
+generating academic recognition for formalization work and eventually lead to the much
+enlarged corpus of formalized mathematics that is necessary for knowledge-based formal
+mathematical reasoning. Young researchers would contribute formalizations of mathematical
+knowledge in the form of mathematical documents that would be both formal and thus
+machine-readable, as well as human-readable, so that humans could find and understand
+them.</p>
+<p>After about 18 Months of development, Version 1.0 of the OMDoc format was released on
+November 1. 2000 to give users a stable interface to base their documents and systems
+on. It was adopted by various projects in automated deduction, algebraic specification,
+and computer-supported education. The experience from these projects uncovered a multitude
+of small deficiencies and extension possibilities of the format, that have been
+subsequently discussed in the OMDoc community.</p>
+<p>OMDoc 1.1 was released on December 29. 2001 as an attempt to roll the
+uncontroversial and non-disruptive part of the extensions and corrections into a
+consistent language format. The changes to version 1.0 were largely conservative, adding
+optional attributes or child elements. Nevertheless, some non-conservative changes were
+introduced, but only to less used parts of the format or in order to remedy design flaws
+and inconsistencies of version 1.0.</p>
+<p>OMDoc 1.2 is the mature version in the OMDoc 1 series of specifications. It was released on July 17. 2006 and contains
+almost no large-scale changes to the document format, except that <a href="http://w3.org/Math">
+Content MathML</a> is now allowed as a representation for mathematical objects. But many of
+the representational features have been fine-tuned and brought up to date with the
+maturing XML technology (e.g. <code><span class="pln">xml</span><span class="pun">:</span><span class="pln">id</span></code> attributes now follow the
+<a href="http://www.w3.org/TR/2005/REC-xml-id-20050909/">XML ID specification</a> and the Dublin Core
+elements follow the <a href="http://dublincore.org/documents/dcmi-terms/">official syntax</a>. The
+main development is that the OMDoc specification, the DTD, and schema are split into a
+system of interdependent modules that support independent development of certain language
+aspects and simpler specification and deployment of sub-languages.  OMDoc1.2 freezes the
+development so that version 2 can be started off on the modules.</p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="/public/js/jquery.min.js"><\/script>')</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+  <script>window.JSON || document.write("<script src='/public/js/json2.js'>\x3C/script>")</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write("<script src='/public/js/underscore.min.js'>\x3C/script>")</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>
+  <script>window.Backbone || document.write("<script src='/public/js/backbone.min.js'>\x3C/script>")</script>
+
+  <script src="/public/js/script.js"></script>
+
+</body>
+</html>

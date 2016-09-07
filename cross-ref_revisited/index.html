@@ -1,0 +1,172 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+
+  <title>cross ref_revisited || HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/public/css/style.css" >
+  <link rel="stylesheet" href="/public/css/docs.css" >
+
+</head>
+<body>
+  <div id="container" class="wikiconvertor"> 
+    <b class="border-a"></b>
+    <b class="border-b"></b>
+    <b class="border-c"></b>
+    <b class="border-d"></b>
+
+    <div id="header">
+         <h1>OMDoc wiki</h1> 
+    </div>
+
+    <div id="body">
+      <div class="wikiconvertor-pages">
+        <ul>
+            <li><a href="abstractDoc_module&#x2F;">abstractDoc_module</a></li>
+            <li><a href="CDs&#x2F;">CDs</a></li>
+            <li><a href="CodeML&#x2F;">CodeML</a></li>
+            <li><a href="Community&#x2F;">Community</a></li>
+            <li><a href="cross-ref_revisited&#x2F;">cross ref_revisited</a></li>
+            <li><a href="Distribution&#x2F;">Distribution</a></li>
+            <li><a href="DocumentOntology&#x2F;">DocumentOntology</a></li>
+            <li><a href="examples&#x2F;">examples</a></li>
+            <li><a href="extensions&#x2F;">extensions</a></li>
+            <li><a href="FAQ&#x2F;">FAQ</a></li>
+            <li><a href="history&#x2F;">history</a></li>
+            <li><a href="&#x2F;">Home</a></li>
+            <li><a href="MailingLists&#x2F;">MailingLists</a></li>
+            <li><a href="Modules&#x2F;">Modules</a></li>
+            <li><a href="OMDoc1.3&#x2F;">OMDoc1.3</a></li>
+            <li><a href="OMDoc1.6&#x2F;">OMDoc1.6</a></li>
+            <li><a href="OMDoc2.0&#x2F;">OMDoc2.0</a></li>
+            <li><a href="OMDocFormat&#x2F;">OMDocFormat</a></li>
+            <li><a href="omdocPortal&#x2F;">omdocPortal</a></li>
+            <li><a href="OMDocToolsProjects&#x2F;">OMDocToolsProjects</a></li>
+            <li><a href="OpenMath&#x2F;">OpenMath</a></li>
+            <li><a href="PageTemplates&#x2F;">PageTemplates</a></li>
+            <li><a href="PhysML&#x2F;">PhysML</a></li>
+            <li><a href="PresArchitecture&#x2F;">PresArchitecture</a></li>
+            <li><a href="RecentChanges&#x2F;">RecentChanges</a></li>
+            <li><a href="Repository&#x2F;">Repository</a></li>
+            <li><a href="specifications&#x2F;">specifications</a></li>
+            <li><a href="Validation&#x2F;">Validation</a></li>
+            <li><a href="XSLT&#x2F;">XSLT</a></li>
+        </ul>
+      </div>
+
+      <div class="wikiconvertor-content wikistyle relative">
+        <p>Discussion for ticket:1539</p>
+<p>The new specification should be as close to OMDoc 1.2 as possible, minimizing the changes by e.g. not introducing too many new elements. We start with an analysis of LaTeX and semantic markup formats, such as Dita, CNXML, DocBook, and XHTML+RDF, in particular, at their cross-reference and embed-operators.</p>
+<h1 id="hyperlinks-reference-to-web-resources-">hyperlinks (reference to web resources)</h1>
+<ul>
+<li>LaTeX: \url{URL} (label is the URL), \href{label}{URL} (manual label)</li>
+<li>Dita: <xref href="URL">label</xref></li>
+<li>CNXML: <link url="URL">label</link></li>
+<li>DocBook: <ulink url="URL">label</ulink> (uline=url link)</li>
+<li>XHTML+RDFa: as in HTML, but links can be typed (e.g. <code><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"URL"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"type"</span><span class="tag">&gt;</span></code>) and need not be visible nor clickable (e.g. <code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"type"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span></code> in the page head)</li>
+<li>OMDoc1.2: <link href="URL">label</link></li>
+</ul>
+<h1 id="bibliographic-cross-references-allow-to-reference-non-electronic-resources-">bibliographic cross references (allow to reference non-electronic resources)</h1>
+<ul>
+<li>LaTeX: \cite{ID} (label is generated automatically from the item with ID given a specific bibliographystyle)</li>
+<li>Dita: <cite>title</cite> (identifies the title of the resource. Its keyref attribute allows e.g. to specify the location of the cited material (not yet supported by Dita processors).)</li>
+<li>CNXML: <cite url="...">STRING</cite></li>
+<li>DocBook: <citation>STRING</citation> (the content is assumed to be a reference string, perhaps identical to an abbreviation of an entry in a bibliography)</li>
+<li><a href="http://www.w3.org/TR/rdfa-syntax/#relValues">XHTML+RDF</a>: <span rel="cite" resource="URL">title</span> </li>
+<li>OMDoc 1.2: <ref type="cite" xref="..." /> (points to an OMDoc reference (element reference), label is generated)</li>
+</ul>
+<h1 id="document-cross-references-within-and-across-documents-">document cross-references (within and across documents)</h1>
+<ul>
+<li>LaTeX: \hyperlink{label}{ID} (manual label), \ref{ID} (label is generated, used for figures, tables, sections, etc.)</li>
+<li>Dita: <xref href="IDREF">label</xref> (points to another DITA topic in the same file (IDREF=#topic), to a specific element inside the topic (IDREF=#topic/el-id), or to topics/elements in another file (IDREF=./file#topic), the label is optional, processing system uses title of the referenced resource to generate a label in the output document --- e.g. for <a href="">label</a> in XHTML, an optional type indicates whether the link targets at a figure, table, footnote, topic, etc., an optional format attribute specifies the format of the target resource, e.g. DIAT, PDF, or HTML) or <term></term> to mark terms that require further definitions (definiendum), an optional keyref attribute allows to link to the definition (definiens) e.g. in a glossary (not yet supported by Dita processors)</li>
+<li>CNXML: <link document="..." target-id="..." strength="...">label</link> as well as <term document="..." target-id="...">STRING</term> for interlinking symbols and definitions</li>
+<li>DocBook: <xref linkend="IDREF" endterm="IDREF"> (linkend specifies the ID of referenced element, the optional endterm attribute specifies an element, which content can be used as label, otherwise the label is generated) or <link linkend="IDREF" endterm="IDREF">label</link> (no generation of the label) or <olink localinfo="STRING"></olink> (indirect addressing through another entity)</li>
+<li>XHTML+RDFa: as in HTML (<code><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"id"</span><span class="tag">&gt;</span></code>, or <code><span class="lit">@id</span></code> attribute, then use <code><span class="pln">document</span><span class="pun">-</span><span class="pln">URL</span><span class="com">#id</span></code> as link target), but cross-refs can be typed</li>
+<li>OMDoc: e.g. <method xref="..."/>, <definition for="..."/></li>
+</ul>
+<h1 id="embedding-cross-references">embedding cross references</h1>
+<ul>
+<li>LaTeX: \include{filename} and \input{filename}</li>
+<li>Dita: <topicref navtitle="label" href="IDREF" /> (embeds a topic or dita map or external web resource, can be nested to express document structures (or table of contents) used to generate navigations, navtitle specifies the title of the topic as it will appear in a navigation)</li>
+<li>CNXML see ticket:1540</li>
+<li>DocBook: <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="intro.xml" /> (very sophisticated approach, not all functionality is mentioned here: granular embedding is provided by adding an xpointer attribute, if no xpointer is given the whole file starting from the root element is copied to the parent during the flattening, the referenced file has a complete DocType declaration that identifies its type, e.g. chapter, part, section; The href value in an XInclude can be an absolute path, a relative path, an HTTP URL that accesses a web server, or any other URI; if the href attribute is omitted and a xpointer is given, XInclude can be used to repeat parts of the current document, XInclude can provide a fallback if e.g. the referenced file cannot be found)</li>
+<li>XHTML+RDFa: none really, would be realizable involving JavaScript though</li>
+<li>OMDoc1.2: <ref type="include" xref="..."></li>
+</ul>
+<h1 id="ref-revisited">REF revisited</h1>
+<ul>
+<li><p>ref should only be used as include operator (the former type=include attribute)</p>
+</li>
+<li><p>for the conversion of refs into a table of content or navi, we need labels. These can be manually specified. If no label is given the title/name/xml:id of the referenced element is used (analogously to the Dita xref element). We need to discuss how this label is marked up, according to Dita it would be</p>
+</li>
+</ul>
+<pre><code><span class="tag">&lt;ref</span><span class="pln"> </span><span class="atn">xref</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span><span class="pln">label</span><span class="tag">&lt;/ref&gt;</span><span class="pln"> (manual label) or <br /></span><span class="tag">&lt;ref</span><span class="pln"> </span><span class="atn">xref</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;&lt;/ref&gt;</span><span class="pln"> (generate label from the referenced item)<br /></span></code></pre><p>We also need to specify what should be taken as a fallback label. We consider the DC title metadata field most appropriate. If that is not given, we fall back to the value of the @name attribute (where it exists), and finally to @xml:id.</p>
+<ul>
+<li>refs can be embedded at any point in an OMDoc document</li>
+<li><p>refs can reference (and thus replace) any addressable OMDoc item, e.g. the following is possible:</p>
+  <omtext>
+    <CMP></CMP>
+    <ref xref=".." />
+  </omtext>
+
+
+</li>
+</ul>
+<ul>
+<li>omgroup element (not a &quot;narrative&quot; tag) is used as container element for refs and to structure/ group them. It can have a type in order to associate presentational information for the human-readable output document (e.g. encoded in XSLT or CSS). The markup of the type is to be discussed. Here we distinguish between a pragmatic and a strict syntax (the former can be translated into the latter). The strict syntax will be RDFa and have a formal semantics.</li>
+</ul>
+<p>Pragmatic mark up with type attribute:</p>
+<pre><code><span class="pln">to be </span><span class="kwd">done</span><span class="pln"><br /></span></code></pre><p>Strict mark up in RDFa:</p>
+<pre><code><span class="pln">to be </span><span class="kwd">done</span><span class="pln"><br /></span></code></pre><ul>
+<li><p>validation is only provided for flattened document. see ticket:1541</p>
+</li>
+<li><p>we should check out DocBook <a href="http://www.sagehill.net/docbookxsl/ModularDoc.html#UsingXinclude">http://www.sagehill.net/docbookxsl/ModularDoc.html#UsingXinclude</a> for further functionality</p>
+</li>
+</ul>
+<h1 id="variants">Variants</h1>
+<ul>
+<li><p>refs can be annotated with an ic attribute providing their characteristics (or properties)</p>
+</li>
+<li><p>refs with common characteristics can be grouped as variants, such a group is called a variant specification. Variant specifications are annotated with variant dimensions in which the refs relate, the markup is to be discussed. For example, we can reuse the omgroup element or introduce a new element, e.g. a variant element (as proposed in MathUI 2007).</p>
+</li>
+</ul>
+<pre><code><span class="tag">&lt;variant</span><span class="pln"> </span><span class="atn">theory</span><span class="pun">=</span><span class="atv">"my.dimensions"</span><span class="pln"> </span><span class="atn">vardim</span><span class="pun">=</span><span class="atv">"language,area"</span><span class="tag">&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;ref</span><span class="pln"> </span><span class="atn">ic</span><span class="pun">=</span><span class="atv">"language:en,area:math"</span><span class="pln"> </span><span class="atn">xref</span><span class="pun">=</span><span class="atv">"#text1"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;ref</span><span class="pln"> </span><span class="atn">ic</span><span class="pun">=</span><span class="atv">"language:de,area:physics"</span><span class="pln"> </span><span class="atn">xref</span><span class="pun">=</span><span class="atv">"#text2"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br /></span><span class="tag">&lt;/variant&gt;</span><span class="pln"><br /><br /></span><span class="tag">&lt;theory</span><span class="pln"> </span><span class="atn">xml:id</span><span class="pun">=</span><span class="atv">"my.dimensions"</span><span class="tag">&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;symbol</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"area"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;symbol</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"math"</span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;symbol</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"physics"</span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;symbol</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"language"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;symbol</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"en"</span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;symbol</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"de"</span><span class="tag">/&gt;</span><span class="pln"><br /></span><span class="tag">&lt;/theory&gt;</span><span class="pln"><br /></span></code></pre><p>In our example above, the vardim attribute specifies in which variant dimensions the refs relate. The ic attribute points to the specific properties of the variant texts in these dimensions. The value of ic and vardim address symbols, which are defined in an OMDoc theory. This theory thus defines the variant dimensions and values used in the variant specification. It is specified by the theory attribute.</p>
+<h1 id="cite">CITE</h1>
+<ul>
+<li>ref with type=cite should no longer used</li>
+<li>instead a new element can be introduced, e.g. a cite element. A citation can point to a url, bibliographic entry, or other OMDoc item. The cite element can have an optional label. If left blank the label is generated (the generation depends on the type of the referenced item, i.e. is different for bibliographic entry, urls, and other OMDoc elements).</li>
+</ul>
+<h1 id="narcon">NARCON</h1>
+<p>Dita provides a sophisticated infrastructure that separates content and narrative concept. In contrast to OMDoc 1.2., content fragments are maintained separately and are not embedded in other documents in order to be reused. Dita cannot provide self-contained document and is thus not a document mark-up format, rather an information architecture. However, we need to provide self-contained documents if systems should be able to exchange them.</p>
+<p>The question to be discuss is whether we should only exchange flattened documents (self-contained documents without ref tags) or whether we need to introduce a markup that combines a contracted document and the content referenced by its ref tags. I personally believe that the narrative content markup (narcon markup) should be omitted. The maintenance of extracted content should be handled by the processing system and not the markup format (as it is done by all the above markup formats).</p>
+<p>However, if we should nevertheless want the narcon markup, we can build on what is already part of the OMDoc specifications: A revision of OMDoc has replaced the former omgroup element with an omdoc element, which can be arbitrary nested. These nested omdoc elements represent a document&#39;s structure. They can include content or ref elements. For embedding the content referenced by the ref element, we use the OMDoc 1.2 ignore elements. It can be nested. Content can also be stored outside the document, using omdoc and ignore elements it can be arbitrary nested.</p>
+<pre><code><span class="tag">&lt;omdoc</span><span class="pln"> </span><span class="atn">xml:id</span><span class="pun">=</span><span class="atv">"doc1"</span><span class="tag">&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;omdoc&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;ref</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"include"</span><span class="pln"> </span><span class="atn">xref</span><span class="pun">=</span><span class="atv">"#enum"</span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;ref</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"include"</span><span class="pln"> </span><span class="atn">xref</span><span class="pun">=</span><span class="atv">"#t3"</span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;/omdoc&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;ref</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"include"</span><span class="pln"> </span><span class="atn">xref</span><span class="pun">=</span><span class="atv">"#st1"</span><span class="tag">/&gt;</span><span class="pln"><br /><br />&nbsp; </span><span class="tag">&lt;ignore</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"targets"</span><span class="tag">&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;omdoc</span><span class="pln"> </span><span class="atn">xml:id</span><span class="pun">=</span><span class="atv">"enum"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"enumeration"</span><span class="tag">&gt;</span><span class="pln"><br />&nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;ref</span><span class="pln"> </span><span class="atn">xref</span><span class="pun">=</span><span class="atv">"#t1"</span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; &nbsp; &nbsp; </span><span class="tag">&lt;ref</span><span class="pln"> </span><span class="atn">xref</span><span class="pun">=</span><span class="atv">"#t2"</span><span class="tag">/&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;/omdoc&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;omtext</span><span class="pln"> </span><span class="atn">xml:id</span><span class="pun">=</span><span class="atv">"t1"</span><span class="tag">&gt;</span><span class="pln">T1</span><span class="tag">&lt;/omtext&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;omtext</span><span class="pln"> </span><span class="atn">xml:id</span><span class="pun">=</span><span class="atv">"t2"</span><span class="tag">&gt;</span><span class="pln">T2</span><span class="tag">&lt;/omtext&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;omtext</span><span class="pln"> </span><span class="atn">xml:id</span><span class="pun">=</span><span class="atv">"t3"</span><span class="tag">&gt;</span><span class="pln">T3</span><span class="tag">&lt;/omtext&gt;</span><span class="pln"><br />&nbsp; &nbsp; </span><span class="tag">&lt;omdoc</span><span class="pln"> </span><span class="atn">xml:id</span><span class="pun">=</span><span class="atv">"st1"</span><span class="tag">&gt;</span><span class="pln">slide</span><span class="tag">&lt;/omdoc&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;/ignore&gt;</span><span class="pln"><br /></span><span class="tag">&lt;/omdoc&gt;</span><span class="pln"><br /></span></code></pre>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="/public/js/jquery.min.js"><\/script>')</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+  <script>window.JSON || document.write("<script src='/public/js/json2.js'>\x3C/script>")</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write("<script src='/public/js/underscore.min.js'>\x3C/script>")</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>
+  <script>window.Backbone || document.write("<script src='/public/js/backbone.min.js'>\x3C/script>")</script>
+
+  <script src="/public/js/script.js"></script>
+
+</body>
+</html>

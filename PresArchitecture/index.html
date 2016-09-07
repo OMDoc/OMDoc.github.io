@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en-us" dir="ltr" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-us" dir="ltr" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-us" dir="ltr" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-us" dir="ltr" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-us" dir="ltr" class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+  <meta charset="utf-8">
+
+  <title>PresArchitecture || HTML5 Boilerplate - A rock-solid default template for HTML5 awesome.</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/public/css/style.css" >
+  <link rel="stylesheet" href="/public/css/docs.css" >
+
+</head>
+<body>
+  <div id="container" class="wikiconvertor"> 
+    <b class="border-a"></b>
+    <b class="border-b"></b>
+    <b class="border-c"></b>
+    <b class="border-d"></b>
+
+    <div id="header">
+         <h1>OMDoc wiki</h1> 
+    </div>
+
+    <div id="body">
+      <div class="wikiconvertor-pages">
+        <ul>
+            <li><a href="abstractDoc_module&#x2F;">abstractDoc_module</a></li>
+            <li><a href="CDs&#x2F;">CDs</a></li>
+            <li><a href="CodeML&#x2F;">CodeML</a></li>
+            <li><a href="Community&#x2F;">Community</a></li>
+            <li><a href="cross-ref_revisited&#x2F;">cross ref_revisited</a></li>
+            <li><a href="Distribution&#x2F;">Distribution</a></li>
+            <li><a href="DocumentOntology&#x2F;">DocumentOntology</a></li>
+            <li><a href="examples&#x2F;">examples</a></li>
+            <li><a href="extensions&#x2F;">extensions</a></li>
+            <li><a href="FAQ&#x2F;">FAQ</a></li>
+            <li><a href="history&#x2F;">history</a></li>
+            <li><a href="&#x2F;">Home</a></li>
+            <li><a href="MailingLists&#x2F;">MailingLists</a></li>
+            <li><a href="Modules&#x2F;">Modules</a></li>
+            <li><a href="OMDoc1.3&#x2F;">OMDoc1.3</a></li>
+            <li><a href="OMDoc1.6&#x2F;">OMDoc1.6</a></li>
+            <li><a href="OMDoc2.0&#x2F;">OMDoc2.0</a></li>
+            <li><a href="OMDocFormat&#x2F;">OMDocFormat</a></li>
+            <li><a href="omdocPortal&#x2F;">omdocPortal</a></li>
+            <li><a href="OMDocToolsProjects&#x2F;">OMDocToolsProjects</a></li>
+            <li><a href="OpenMath&#x2F;">OpenMath</a></li>
+            <li><a href="PageTemplates&#x2F;">PageTemplates</a></li>
+            <li><a href="PhysML&#x2F;">PhysML</a></li>
+            <li><a href="PresArchitecture&#x2F;">PresArchitecture</a></li>
+            <li><a href="RecentChanges&#x2F;">RecentChanges</a></li>
+            <li><a href="Repository&#x2F;">Repository</a></li>
+            <li><a href="specifications&#x2F;">specifications</a></li>
+            <li><a href="Validation&#x2F;">Validation</a></li>
+            <li><a href="XSLT&#x2F;">XSLT</a></li>
+        </ul>
+      </div>
+
+      <div class="wikiconvertor-content wikistyle relative">
+        <h2 id="-pageoutline-pageoutline-"><a href="PageOutline/">PageOutline</a></h2>
+<h2 id="note-this-is-the-omdoc1-2-presentation-architecture-it-is-no-longer-supported-by-supported-software-you-should-use-the-jomdoc-wikistart-jomdoc-system-and-the-new-notation-architecture-please-contact-wiki-mailinglists-the-omdoc-mailing-list-for-details-">NOTE: This is the OMDoc1.2 presentation architecture; it is no longer supported by supported software. You should use the [jomdoc:WikiStart JOMDoc] system and the new notation architecture. Please contact [wiki:MailingLists the OMDoc mailing list] for details.</h2>
+<h1 id="a-two-level-approach">A two-level approach</h1>
+<p>Mathematical texts often carry typographic conventions that cannot be determined by
+general principles alone. In order to accomodate this, OMDoc provides a limited
+functionality for embedding style information into the document. The general approach is
+not to provide general-purpose presentational primitives that can be sprinkled over the
+document, since that would distract the author from the mathematical content, but to
+support the specification of general style information for OMDoc elements and mathematical
+symbols in separate elements.</p>
+<p>From this information we can then generate specialized style sheets that do the actual
+transformation. So we have a two-level approach: The OMDoc files only specify information
+from which presentation stylesheets can be generated in multiple steps.</p>
+<p>This has the advantage that we can specify presentation information as part of the content
+and re-use it flexibly wherever this content is referenced.</p>
+<h1 id="specification-of-presentation-information">Specification of Presentation Information</h1>
+<p>There are multiple possibilities for specifying the presentation of mathematical symbols
+and OMDoc elements, for details see <a href="http://omdoc.org/pubs/omdoc1.2.pdf">the OMDoc specification</a>.
+We will go over some examples here.</p>
+<p>To specify the presentation of a symbol in OMDoc, we add an element</p>
+<pre><code><span class="tag">&lt;presentation</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"forall"</span><span class="pln"> </span><span class="atn">parent</span><span class="pun">=</span><span class="atv">"OMBIND"</span><span class="pln"> </span><span class="atn">separator</span><span class="pun">=</span><span class="atv">"."</span><span class="tag">&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;use</span><span class="pln"> </span><span class="atn">format</span><span class="pun">=</span><span class="atv">"TeX"</span><span class="tag">&gt;</span><span class="pln">\forall</span><span class="tag">&lt;/use&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;use</span><span class="pln"> </span><span class="atn">format</span><span class="pun">=</span><span class="atv">"html|pmml"</span><span class="tag">&gt;</span><span class="pln">&amp;amp;#8704;</span><span class="tag">&lt;/use&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;use</span><span class="pln"> </span><span class="atn">format</span><span class="pun">=</span><span class="atv">"cmml"</span><span class="pln"> </span><span class="atn">element</span><span class="pun">=</span><span class="atv">"forall"</span><span class="tag">/&gt;</span><span class="pln"><br /></span><span class="tag">&lt;/presentation&gt;</span><span class="pln"><br /></span></code></pre><p>to the document that specifies the symbol itself. In this example, the presentation of the
+universal quantifier is specified for occurrences of the symbol inside an <code><span class="pln">OMBIND</span></code>
+element. The <code><span class="pln">presentation</span></code> element specifies that TeX/LaTeX should use the macro
+<code><span class="pun">\</span><span class="pln">forall</span></code>, whereas HTML and presentation MathML should use the unicode character
+<code><span class="pun">&amp;</span><span class="com">#8704;</span></code> with the decimal number 8704 (which gives us the same glyph as the TeX
+macro). Content MathML will use the empty element <code><span class="tag">&lt;forall/&gt;</span></code>.</p>
+<p>A <code><span class="pln">presentation</span></code> element like </p>
+<pre><code><span class="tag">&lt;presentation</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"eq"</span><span class="pln"> </span><span class="atn">parent</span><span class="pun">=</span><span class="atv">"OMA"</span><span class="pln"> </span><span class="atn">fixity</span><span class="pun">=</span><span class="atv">"infix"</span><span class="pln"> </span><span class="atn">precedence</span><span class="pun">=</span><span class="atv">"700"</span><span class="tag">&gt;</span><span class="pln"><br />&nbsp; </span><span class="tag">&lt;use</span><span class="pln"> &nbsp;</span><span class="atn">format</span><span class="pun">=</span><span class="atv">"default"</span><span class="tag">&gt;</span><span class="pln">=</span><span class="tag">&lt;/use&gt;</span><span class="pln"><br /></span><span class="tag">&lt;/presentation&gt;</span><span class="pln"><br /></span></code></pre><p>specifies that equality should inside an application should be treated as a binary infix
+operator with precedence 700 (for bracket elision).</p>
+<h1 id="a-worked-example">A worked Example</h1>
+<p>Let us now consider a small example: We have an OMDoc document 
+[source:branches/omdoc-1.2/examples/varia/presex.omdoc presex.omdoc], 
+which uses symbols from the OpenMath content dictionaries 
+[source:branches/omdoc-1.2/examples/omstd/arith1.omdoc arith1.omdoc]
+and
+[source:branches/omdoc-1.2/examples/omstd/relation1.omdoc relation1.omdoc], 
+and we want to present it in html.</p>
+<ol>
+<li>Generate (using [source:branches/omdoc-1.2/xsl/expres.xsl expres.xsl])
+ the style sheets 
+ [source:branches/omdoc-1.2/examples/omstd/arith1-tmpl.xsl arith1-tmpl.xsl] and 
+ [source:branches/omdoc-1.2/examples/omstd/relation1-tmpl.xsl relation1-tmpl.xsl]
+ that contain the XSLT templates induced by the presentation. This has to be done 
+ for all the documents that define symbols used in <code><span class="pln">test</span><span class="pun">.</span><span class="pln">omdoc</span></code>. If these are standard mathematical libraries, such as the OpenMath 
+ [source:branches/omdoc-1.2/examples/omstd core content dictionaries], this will already have been done for you.</li>
+<li>Generate (using [source:branches/omdoc-1.2/xsl/exincl.xsl exincl.xsl])
+ a style sheet 
+ [source:branches/omdoc-1.2/presex-incl.xsl presex-incl.xsl]
+ includes all the <code><span class="pun">-</span><span class="pln">tmpl</span><span class="pun">.</span><span class="pln">xsl</span></code> style sheets generated in the previous steps. </li>
+<li>finally bind together the inclusion style sheet from the last step with the
+ generic html transformation in a style sheet 
+ [source:branches/omdoc-1.2/examples/varia/presex2html.xsl presex2html.xsl],
+ which can be applied to 
+ [source:branches/omdoc-1.2/examples/varia/presex.omdoc presex.omdoc] to obtain
+ [source:branches/omdoc-1.2/examples/varia/presex.html presex.html].</li>
+</ol>
+<p>This process can be automated by <code><span class="typ">Makefiles</span></code>, see for instance the 
+[source:branches/omdoc-1.2/examples/varia/Makefile Makefile] responsible for
+<code><span class="pln">presex</span><span class="pun">.</span><span class="pln">omdoc</span></code> (the real work is done in the included 
+[source:branches/omdoc-1.2/lib/Makefile.vars Makefile.vars] and 
+[source:branches/omdoc-1.2/lib/Makefile.in Makefile.in].</p>
+<h1 id="internationalization">Internationalization</h1>
+<p>These style sheets are internationalized. If you set the <code><span class="typ">TargetLanguage</span></code> parameter
+to the relevant ISO 639 two-letter country codes (<code><span class="pln">en</span></code> German, <code><span class="pln">fr</span></code> Dutch...), then they will pick up the
+appropriate 
+[source:branches/omdoc-1.2/xsl/locale.xml localized keywords] 
+from the file
+[source:branches/omdoc-1.2/xsl/locale-default.xml locale-default.xml].
+Of course, mathematical texts elements in the OMDoc also have to exist in translated form, in order to get a fully localized version of the OMDoc.</p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="/public/js/jquery.min.js"><\/script>')</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+  <script>window.JSON || document.write("<script src='/public/js/json2.js'>\x3C/script>")</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script>
+  <script>window._ || document.write("<script src='/public/js/underscore.min.js'>\x3C/script>")</script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.0/backbone-min.js"></script>
+  <script>window.Backbone || document.write("<script src='/public/js/backbone.min.js'>\x3C/script>")</script>
+
+  <script src="/public/js/script.js"></script>
+
+</body>
+</html>

@@ -11,8 +11,6 @@ PhysML is a content markup language for physics realized by extending the [OMDoc
  
 PhysML is still a very young project, the initial members are
 
- 
-
 * [Eberhard R. Hilf]("http://physnet.uni-oldenburg.de/~hilf/") (ISN Oldenburg) 
 * [Michael Kohlhase]("http://www.kwarc.info/kohlhase/") (Jacobs University Bremen) 
 * [Heinrich Stamerjohanns]("http://www.eecs.jacobs-university.de/wiki/index.php/Heinrich_Stamerjohanns") (Jacobs University) 

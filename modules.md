@@ -2,6 +2,8 @@
 layout: default
 title: OMDoc Modules
 ---
+# OMDoc Modules
+
 OMDoc is an XML application, organized into ten modules,
 
 | MOBJ | Math Objects | Mathematical Formulae in [OpenMath]("http://www.openmath.org"), [MathML]("http://www.w3.org/Math/") or legacy formats.|

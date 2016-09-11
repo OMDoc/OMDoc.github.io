@@ -10,13 +10,11 @@ CodeML is inspired by the [MathML]("http://w3.org/Math/") and [OpenMath]("http:/
 
  
 ## Papers and Manuals
- 
 
-- [CodeML: An Open Markup Format the Content and Presentatation of Program Code]("https://svn.omdoc.org/repos/codeml/doc/spec/codeml.pdf")  the CodeML Specification. 
-- [Design and Implementation of a CSS-based CodeML Viewer]("https://svn.omdoc.org/repos/codeml/doc/dhital_cssviewer.pdf") 
-- [Design and Implementation of a Java to  CodeML converter]("https://svn.omdoc.org/repos/codeml/doc/rabin_java_converter.pdf") 
+* [CodeML: An Open Markup Format the Content and Presentatation of Program Code]("https://svn.omdoc.org/repos/codeml/doc/spec/codeml.pdf")  the CodeML Specification. 
+* [Design and Implementation of a CSS-based CodeML Viewer]("https://svn.omdoc.org/repos/codeml/doc/dhital_cssviewer.pdf") 
+* [Design and Implementation of a Java to  CodeML converter]("https://svn.omdoc.org/repos/codeml/doc/rabin_java_converter.pdf") 
 
- 
-## The CodeML Distribution
+ ## The CodeML Distribution
  
 CodeML is distributed as a [set of language resources]("https://trac.omdoc.org/OMDoc/browser/codeml") from the [wiki:Repository OMDoc subversion Repository]

@@ -1,5 +1,5 @@
 ---
-layout:default
+layout: default
 title: OMDoc Repository
 ---
 The OMDoc repository is a [Subversion]("http://svnbook.red-bean.com/en/1.1/svn-book.html") repository at [https://svn.omdoc.org/repos/omdoc]("https://svn.omdoc.org/repos/omdoc"). 

@@ -5,7 +5,7 @@ permalink:        pretty
 title:               OMDoc
 tagline:             'OMDoc is an extensible standard for representing the semantics of mathematical objects.'
 description:         'OMDoc is an extensible standard for representing the semantics of mathematical objects.'
-url:                 http://openmath.github.io
+url:                 http://OMDoc.github.io
 baseurl:             ''
 paginate:            5
 paginate_path:       "/news/page:num/"

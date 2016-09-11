@@ -1,6 +1,6 @@
 ---
-layout:default
-title:OMDoc portal
+layout: default
+title: OMDoc portal
 ---
 OMDoc.org serves as a community portal for the OMDoc community and as a clearinghouse for information about OMDoc-based projects and extensions to other sciences.
 

@@ -1,6 +1,6 @@
 ---
-layout:default
-title:OMDoc Validation
+layout: default
+title: OMDoc Validation
 ---
 OMDoc is an XML vocabulary, which basically means that OMDocs must be valid [XML]("http://www.w3c.org/XML") (i.e. have a balanced set of element tags).
 

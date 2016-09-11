@@ -1,6 +1,6 @@
 ---
-layout:default
-title:OMDoc1.6
+layout: default
+title: OMDoc1.6
 ---
 
 OMDoc1.6 is the first step towards [wiki:OMDoc2.0], the radically redesigned and simplified version of the OMDoc format. 

@@ -1,6 +1,6 @@
 ---
-title: OpenMath: A Technical Overview
 layout: default
+title: "OpenMath: A Technical Overview"
 ---
 ## Introduction
 

@@ -1,6 +1,6 @@
 ---
-layout:default
-title:OMDoc1.3
+layout: default
+title: OMDoc1.3
 ---
 OMDoc1.3 is an incremental extension of OMDoc1.2 that addresses immediate needs from the [wiki:OMDocToolsProjects OMDoc applications] that have been the focus of development in the last years.
 

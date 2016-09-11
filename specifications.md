@@ -1,6 +1,6 @@
 ---
-layout:default
-title:OMDoc Specifications
+layout: default
+title: OMDoc Specifications
 ---
 The current stable specification of the OMDoc format is OMDoc1.2. 
 

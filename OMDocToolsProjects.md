@@ -1,5 +1,5 @@
 ---
-layout:default
+layout: default
 title: OMDoc Tools and Projects
 ---
 A representation format is only as good as the respective tools and systems are. Therefore tool development will be the main concern in the next future. 

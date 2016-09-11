@@ -1,5 +1,5 @@
 ---
-layout:default
+layout: default
 title: OMDoc history
 ---
 The start of the development of OMDoc as a content-based representation format for mathematical knowledge was triggered by an e-mail by [Alan Bundy]("http://homepages.inf.ed.ac.uk/bundy/") to [Michael Kohlhase]("http://kwarc.info/kohlhase") in 1998, where he lamented the fact that one of the great hindrances of knowledge-based reasoning is the fact that formalizing mathematical knowledge is very time-consuming and that it is very hard for young researchers to gain recognition for formalization work. This led to the idea of developing a global repository of formalized mathematics, which would eventually allow peer-reviewed publication of formalized mathematical knowledge, thus generating academic recognition for formalization work and eventually lead to the much enlarged corpus of formalized mathematics that is necessary for knowledge-based formal mathematical reasoning. Young researchers would contribute formalizations of mathematical knowledge in the form of mathematical documents that would be both formal and thus machine-readable, as well as human-readable, so that humans could find and understand them.

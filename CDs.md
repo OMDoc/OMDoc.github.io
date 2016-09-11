@@ -2,7 +2,7 @@
 layout: default
 title: OMDoc and OpenMath CDs
 ---
-Content Dictionaries are special documents that define the semantics of symbols. They contain descriptions, mathematical properties, and examples of the concepts represented by these symbols to make their meaning unambiguous. The concept has first been introduced for the [OpenMath]("http://www.openmath.org") format, but will also be the basis for the upcoming MathML3 recommendation.
+Content Dictionaries are special documents that define the semantics of symbols. They contain descriptions, mathematical properties, and examples of the concepts represented by these symbols to make their meaning unambiguous. The concept has first been introduced for the [OpenMath](http://www.openmath.org) format, but will also be the basis for the upcoming MathML3 recommendation.
 
 OMDoc is uses content dictionaries in two ways
 
@@ -11,4 +11,4 @@ OMDoc is uses content dictionaries in two ways
 
 As a consequence OMDocs may contain definitions of mathematical concepts, which need to be referred to using OpenMath symbols. In particular, documents describing theories even reference symbols they define themselves.
 
-The [OpenMath Society]("http://www.openmath.org") has developed a [set of official CDs]("http://www.openmath.org/cd/") for central mathematical concepts. They contain a subset, that is isomorphic to the [MathML]("http://www.w3.org/Math/") concepts, so that rendering is well-understood. For your convenience, we have converted them [to OMDoc]("https://trac.omdoc.org/browser/branches/omdoc-1.2/examples/omstd"). This repository contains the omdoc files themselves (they have been slightly edited to iron out some referencing errors in the CDs, and some of them have been augmented by ```<presentation>``` elements).
+The [OpenMath Society](http://www.openmath.org) has developed a [set of official CDs](http://www.openmath.org/cd/) for central mathematical concepts. They contain a subset, that is isomorphic to the [MathML](http://www.w3.org/Math/) concepts, so that rendering is well-understood. For your convenience, we have converted them [to OMDoc](https://trac.omdoc.org/browser/branches/omdoc-1.2/examples/omstd). This repository contains the omdoc files themselves (they have been slightly edited to iron out some referencing errors in the CDs, and some of them have been augmented by ```<presentation>``` elements).

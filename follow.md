@@ -19,10 +19,10 @@ Twitter](https://twitter.com/{{ site.author.twitter }}).
 
 The OMDoc Project uses the following mailing lists 
 
-* users@omdoc.org ([subscribe]("http://lists.kwarc.info/mailman/listinfo/project-omdoc"), [archives]("http://lists.kwarc.info/mailman/private/project-omdoc")) for general announcements and discussions (software, tools, organization) 
-* developers@omdoc.org ([subscribe]("http://lists.kwarc.info/mailman/listinfo/project-omdoc-dev"), [archives]("http://lists.kwarc.info/mailman/private/project-omdoc-dev")) for communication among the OMDoc developers 
+* users@omdoc.org ([subscribe](http://lists.kwarc.info/mailman/listinfo/project-omdoc), [archives](http://lists.kwarc.info/mailman/private/project-omdoc)) for general announcements and discussions (software, tools, organization) 
+* developers@omdoc.org ([subscribe](http://lists.kwarc.info/mailman/listinfo/project-omdoc-dev), [archives](http://lists.kwarc.info/mailman/private/project-omdoc-dev)) for communication among the OMDoc developers 
 
-We try to keep a [wiki:FAQ] for these mailing lists and integrate questions into the OMDoc portal. 
+We try to keep a [FAQ](../FAQ) for these mailing lists and integrate questions into the OMDoc portal. 
 
 # Contact
 * [Michael Kohlhase](http://kwarc.info/kohlhase)

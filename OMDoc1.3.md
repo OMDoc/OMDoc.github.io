@@ -4,11 +4,11 @@ title: OMDoc1.3
 ---
 # OMDoc 1.3
 
-OMDoc1.3 is an incremental extension of OMDoc1.2 that addresses immediate needs from the [wiki:OMDocToolsProjects OMDoc applications] that have been the focus of development in the last years.
+OMDoc1.3 is an incremental extension of OMDoc1.2 that addresses immediate needs from the [OMDoc applications](../toolsprojects) that have been the focus of development in the last years.
  
 ## Changes to OMDoc1.2
  
-In a nutshell, we have the following changes now (see a [report:11 full list of what is under discussion]; the [OMDoc1.3 Draft Specification]("http://www.omdoc.org/pubs/omdoc1.3draft.pdf") already documents some of them).  
+In a nutshell, we have the following changes now (see a [report:11 full list of what is under discussion]; the [OMDoc1.3 Draft Specification](http://www.omdoc.org/pubs/omdoc1.3draft.pdf) already documents some of them).  
  
 * OMDoc1.3 uses the namespace ```http://omdoc.org/ns```
 * we have a completely revamped presentation system (see #1616) 

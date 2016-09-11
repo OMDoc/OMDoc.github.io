@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Home
+title: OMDoc Home
 ---
 
-# OMDoct: Open Mathematical Documents
+# OMDoc: Open Mathematical Documents
 
 {% include intro.md %}
 

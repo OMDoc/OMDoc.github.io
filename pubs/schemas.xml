@@ -1,0 +1,4 @@
+<locatingRules xmlns="http://thaiopensource.com/ns/locating-rules/1.0">
+  <documentElement localName="website" typeId="WebSite"/>
+  <typeId id="WebSite" uri="../wsml/ws.rnc"/>
+</locatingRules>

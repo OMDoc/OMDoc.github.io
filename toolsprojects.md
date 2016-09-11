@@ -40,6 +40,6 @@ A representation format is only as good as the respective tools and systems are.
  
 ## OMDoc Interfaces for Existing Systems
 
-* an [Interface](https://svn.omdoc.org/repos/omdoc/branches/projects/pvs/doc/) to the [PVS](http://pvs.csl.sri.com) system. 
-* an [Interface](https://svn.omdoc.org/repos/omdoc/branches/projects/helm/doc/) to the [Coq](http://coq.inria.fr) theorem prover via the [HELM](http://helm.cs.unibo.it) XML interface. 
-* an [Interface](https://svn.omdoc.org/repos/omdoc/branches/omdoc-1.1/projects/aldor/doc/) for the [Aldor](http://www.aldor.org/) programming language (only developed for OMDoc 1.1). 
+* an [Interface](https://github.com/OMDoc/projects/pvs/doc/) to the [PVS](http://pvs.csl.sri.com) system. 
+* an [Interface](https://github.com/OMDoc/projects/helm/doc/) to the [Coq](http://coq.inria.fr) theorem prover via the [HELM](http://helm.cs.unibo.it) XML interface. 
+* an [Interface](https://github.com/OMDoc/projects/aldor/doc/) for the [Aldor](http://www.aldor.org/) programming language (only developed for OMDoc 1.1). 

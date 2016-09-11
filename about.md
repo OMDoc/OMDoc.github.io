@@ -1,3 +1,7 @@
+---
+layout: default 
+title: OMDoc
+---
 
 OMDoc is a markup format and data model for Open Mathematical Documents.
 

@@ -1,4 +1,4 @@
-# Repository holding the sources of the OMDoc.org website (aka OMDoc.github.io)
+# The sources of the OMDoc.org website
 
 This is patterned after the [OpenDreamKit site](http://opendreamkit.org), also see the
 readme there. 

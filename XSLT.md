@@ -7,7 +7,10 @@ title: OMDoc XSLT
 
 As OMDoc is an XML application, we can use the [XSL(T)](http://www.w3.org/Style/XSL) style sheet language for transforming OMDoc documents into other formats.
 
-As mathematics heavily relies on notational conventions for symbols and expressions, these style sheets should be augmented by templates that can be generated specifically for the source document to get good results. OMDoc provides a [common architecture](../PresArchitecture) for this, which we have used in the examples on this page.
+As mathematics heavily relies on notational conventions for symbols and expressions, these
+style sheets should be augmented by templates that can be generated specifically for the
+source document to get good results. OMDoc provides a common architecture for this, which
+we have used in the examples on this page.
 
  
 ## Stylesheets for presenting OMDoc Documents to humans
@@ -20,10 +23,10 @@ As mathematics heavily relies on notational conventions for symbols and expressi
  
 ## Stylesheets for transforming them into machine prover input
 
-* for [LambdaClam](http://dream.dai.ed.ac.uk/software/systems/lambda-clam): [omdoc2lclam.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/omdoc2lclam.xsl) 
-* for the [INKA](http://www.dfki.de/vse/systems/inka/inka5.html) inductive theorem prover [omdoc2dgrl.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/omdoc2dgrl.xsl) 
+* for LambdaClam: [omdoc2lclam.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/omdoc2lclam.xsl) 
+* for the [INKA](http://github.com/theoremprover-museum/InKa/) inductive theorem prover [omdoc2dgrl.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/omdoc2dgrl.xsl) 
 * for the [TPS](http://gtps.math.cmu.edu/tps.html)  higher-order theorem prover [omdoc2tps.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/omdoc2tps.xsl) 
-* for the [OMEGA](http://www.ags.uni-sb.de/~omega/) mathematical assistant: [omdoc2post.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/omdoc2post.xsl) 
+* for the [OMEGA](http://github.com/theoremprover-museum/OMEGA) mathematical assistant: [omdoc2post.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/omdoc2post.xsl) 
 * for interfacing with  OpenMath components: 
   * [cd2omdoc.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/cd2omdoc.xsl) generates OMDoc from  OpenMath Content dictionaries. 
   * [omdoc2cd.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/omdoc2cd.xsl) generates CDs from OMDocs; use  [omdoc2defmp.xsl](https://github.com/OMDoc/OMDoc-1.2/xsl/omdoc2defmp.xsl), to generate defmp files 

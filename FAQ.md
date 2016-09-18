@@ -10,7 +10,12 @@ It is version 1.2, it is described on these web pages and in the [OMDoc specific
  
 ## What is the road-map for further development in OMDoc?
  
-The development of OMDoc 2.0 has already begun, this will be a general (backwards-incompatible) overhaul of the document format, that will take all the experiences with OMDoc 1 into account and track all the developments of web standards since OMDoc 1.2. The development proceeds in steps; see the [Development Plan](../developmentplan) for an overview and [roadmap](https://trac.omdoc.org/OMDoc/roadmap) for a progress report in terms of TRAC tickets. 
+The development of OMDoc 2.0 has already begun, this will be a general
+(backwards-incompatible) overhaul of the document format, that will take all the
+experiences with OMDoc 1 into account and track all the developments of web standards
+since OMDoc 1.2. The development proceeds in steps; see the [Development Plan](../about)
+for an overview and [roadmap](https://github.com/OMDoc/OMDoc/issues) for a progress report
+in terms of GitHub tickets.
  
 ## Is'nt OMDoc much too verbose?
  
@@ -23,8 +28,7 @@ If you are concerned about disk space and bandwidth, consider using xml-specific
 ##How do I edit an OMDoc document?
 You have the choice of either
 
-* use the semantic wiki [SWiM](http://kwarc.info/project/swim/), which can import and export OMDoc files, and access files in Subversion repositories 
-- using a general-purpose editor to edit the straight OMDoc representation in ASCII. Emacs
+*  using a general-purpose editor to edit the straight OMDoc representation in ASCII. Emacs
   supports this with ```nxml-mode``` is a general XML mode that supports RelaxNG
   schemata. There is also a dedicated OMDoc mode that needs some love and affection.
 * a specialized XML development environment like  [XML Spy](http://www.xmlspy.com) 
@@ -32,7 +36,7 @@ You have the choice of either
  
 ## How can I transform legacy documents into OMDoc?
  
-There are some rudimentary [tools](../toolssystems). For help on this matter contact the [OMDoc mailing lists](../follow)
+There are some rudimentary [tools](../toolsprojects). For help on this matter contact the [OMDoc mailing lists](../follow)
 
  
 ## Is there a mailing list for OMDoc?
@@ -43,7 +47,7 @@ Yes, we do; see details [here](../follow)
  
 There are multiple possibilities, you can
 
-* extend the set of [OMDoc tools](../tools), or 
-* join one of the [Mailing lists](../mailinglists), or 
-* [file issues](https://trac.omdoc.org/OMDoc/newticket) in TRAC and join the discussions there, o 
-* adopt one of the [OMDoc Modules](../Modules) For anything else, just contact the [developer's mailing list](../follow) 
+* extend the set of [OMDoc tools](../toolsprojects), or 
+* join one of the [Mailing lists](../follow), or 
+* [file issues](https://github.com/OMDoc/OMDoc/issues/new) on GitHub and join the discussions there, o 
+* adopt one of the [OMDoc Modules](../modules) For anything else, just contact the [developer's mailing list](../follow) 

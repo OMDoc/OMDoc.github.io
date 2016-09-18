@@ -3,8 +3,9 @@ permalink:        pretty
 
 # Setup
 title:               OMDoc
-tagline:             'OMDoc is an extensible standard for representing the semantics of mathematical objects.'
-description:         'OMDoc is an extensible standard for representing the semantics of mathematical objects.'
+tagline:             OMDoc (Open Mathematical Documents) is a format for encoding STEM documents and knowledge
+ '
+description:         ' OMDoc (Open Mathematical Documents) is a format for encoding STEM documents and knowledge'
 url:                 http://OMDoc.github.io
 baseurl:             ''
 paginate:            5
@@ -21,8 +22,8 @@ exclude: ['_activities/README.md', '*.synctex.gz', '*.aux', '*.nav', '*.out', '*
 author:
   name:              'Michael Kohlhase'
   url:                   http://omdoc.org
-  email:               om-sc@openmath.org 
-#  twitter:             openmath
+  email:               kohlhase@kwarc.info
+#  twitter:             OMDoc
 
 repository:          OMDoc/OMDoc.github.io
 

@@ -30,7 +30,7 @@ This allows to develop semantics-based added-value services for displaying and m
  
 The current stable version of the OMDoc format is [OMDoc1.2](../distribution) which was released in December 2001 and is considered the mature state of OMDoc 1. [History](../history)
 
-Work on OMDoc Version 2 has started. [more](../development)
+Work on OMDoc Version 2 has started. [more](../OMDoc2.0)
  
 ## Resources
  

@@ -24,7 +24,7 @@ This allows to develop semantics-based added-value services for displaying and m
 1. be 'ontologically uncommitted' (like the [OpenMath](http://www.openmath.org) format), so that it can serve as an 'integration format' for mathematical software systems. 
 2. provide a representation format for 'mathematical documents' that combine 'formal' and 'informal' views of all the 'mathematical knowledge' contained in them. 
 3. be based on 'sound logic/representational principles' (as not to embarrass the author in front of his colleagues from automated reasoning) 
-4. be based on 'structural/content markup' to guarantee both 1. and 2. To ensure manageability of the format OMDoc is a [modular format](../modules) to allow language subsetting, embedding and [extensions](../extensions). 
+4. be based on 'structural/content markup' to guarantee both 1. and 2. To ensure manageability of the format OMDoc is a [modular format](../modules) to allow language subsetting, embedding and extensions. 
  
 ## Status & History
  

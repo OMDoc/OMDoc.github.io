@@ -27,14 +27,14 @@ A representation format is only as good as the respective tools and systems are.
 
 * [ActiveMath](http://www.activemath.org) (Math Learning on the    Web) 
 * [Course Capsules](http://www.cs.cmu.edu/~ccaps/) (Content based course delivery at Carnegie Mellon) 
-* [OMEGA](http://www.ags.uni-sb.de/~omega/software/omega/) (a mathematical assistant) 
+* [OMEGA](http://github.com/theoremprover-museum/OMEGA) (a mathematical assistant) 
  
 ## Systems that speak OMDoc (varying degrees of fluency)
 
-* [LambdaClam](http://dream.inf.ed.ac.uk/software/lambda-clam/)    (an inductive theorem prover) 
-* [INKA](http://www.dfki.de/vse/systems/inka/inka5.html) (another inductive theorem prover) 
+* LambdaClam (an inductive theorem prover) 
+* [INKA](http://github.com/theoremprover-museum/InKa/) (another inductive theorem prover) 
 * [TPS](http://gtps.math.cmu.edu/tps.html) (a higher-order theorem prover) 
-* [OMEGA](http://www.ags.uni-sb.de/~omega/software/omega/) (a mathematical assistant) 
+* [OMEGA](http://github.com/theoremprover-museum/OMEGA) (a mathematical assistant) 
 * [VeriFun](http://http://verifun.org) (a verifier for functional programs) 
 
  

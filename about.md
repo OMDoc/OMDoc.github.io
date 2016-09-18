@@ -9,10 +9,10 @@ OMDoc is a markup format and data model for Open Mathematical Documents.
 OMDoc serves as semantics-oriented representation format and ontology language for
 mathematical knowledge. [Format](../format), [Distribution](../distribution), [Examples](../examples)
 
-The current stable version is [OMDoc1.2](../OMDoc1.2) (see the
-[OMDoc1.2 Book](../pubs/omdoc1.2.pdf). Current development work mainly focuses on OMDoc
-applications, but the experiences gained there flows back into the OMDoc
-Specifications. We are currently working on two fronts:
+The current stable version is OMDoc1.2 (see the [OMDoc1.2 Book](../pubs/omdoc1.2.pd) and
+the [OMDoc1.2 Repository](https://github.com/OMDoc/OMDoc1.2). Current development work
+mainly focuses on OMDoc applications, but the experiences gained there flows back into the
+OMDoc Specifications. We are currently working on two fronts:
 
 * [OMDoc1.3](../OMDoc1.3) is an incremental extension of OMDoc1.2 that addresses immediate needs from the
 applications and increases semantic web compatibility.
